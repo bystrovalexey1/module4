@@ -2,8 +2,8 @@ class Category:
     name: str
     description: str
     products: list
-    category_count = 0
-    product_count = 0
+    category_count: int = 0
+    product_count: int = 0
 
     def __init__(self, name: str, description: str, products: list) -> None:
         self.name = name

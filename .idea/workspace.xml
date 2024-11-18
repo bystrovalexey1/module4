@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2917e5-fac1-4391-a357-219538b4f05a" name="Changes" comment="homework 14.1&#10;read from json">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1a2917e5-fac1-4391-a357-219538b4f05a" name="Changes" comment="исправил ошибки">
+      <change afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,13 +146,22 @@
       <option name="project" value="LOCAL" />
       <updated>1731902098462</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="исправил ошибки">
+      <option name="closed" value="true" />
+      <created>1731948137455</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731948137455</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="homework 14.1" />
     <MESSAGE value="homework 14.1&#10;read from json" />
-    <option name="LAST_COMMIT_MESSAGE" value="homework 14.1&#10;read from json" />
+    <MESSAGE value="исправил ошибки" />
+    <option name="LAST_COMMIT_MESSAGE" value="исправил ошибки" />
   </component>
 </project>
