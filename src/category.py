@@ -17,10 +17,11 @@ class Category:
 
     @property
     def products(self):
+        """ Функция возврата продуктов """
         return self.__products
 
     def add_product(self, new_product: Product):
-        """Функция добавления продуктов"""
+        """Функция добавления продуктов в список"""
         self.__products.append(new_product)
         Category.product_count += 1
 
