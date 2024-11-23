@@ -16,3 +16,21 @@ def test_category_init(first_category, second_category):
     assert second_category.category_count == 2
     assert first_category.product_count == 5
     assert second_category.product_count == 5
+
+
+def test_products(first_category):
+    assert first_category.products == ["Iphone 11 Pro", "Samsung Galaxy S10"]
+
+
+def test_add_product(first_category, second_product):
+    assert first_category.product_count == 9
+    first_category.add_product(second_product)
+    assert first_category.product_count == 10
+
+
+def test_product_list_property(third_category):
+    print(third_category.product_list)
+    assert (
+        third_category.product_list == "Iphone 11 Pro, 24000.0 руб. Остаток: 43 шт.\n"
+        "XIAOMI Ultra Pro, 24000.0 руб. Остаток: 43 шт.\n"
+    )
