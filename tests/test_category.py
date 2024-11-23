@@ -1,6 +1,3 @@
-from src.category import Category
-
-
 def test_category_init(first_category, second_category):
     assert first_category.name == "Смартфоны"
     assert (
@@ -33,4 +30,7 @@ def test_add_product(first_category, second_product):
 
 def test_product_list_property(third_category):
     print(third_category.product_list)
-    assert third_category.product_list == 'Iphone 11 Pro, 24000.0 руб. Остаток: 43 шт.\n' 'XIAOMI Ultra Pro, 24000.0 руб. Остаток: 43 шт.\n'
+    assert (
+        third_category.product_list == "Iphone 11 Pro, 24000.0 руб. Остаток: 43 шт.\n"
+        "XIAOMI Ultra Pro, 24000.0 руб. Остаток: 43 шт.\n"
+    )

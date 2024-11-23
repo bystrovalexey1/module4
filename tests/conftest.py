@@ -43,4 +43,5 @@ def third_category(first_product, second_product):
     return Category(
         "Смартфоны",
         "Смартфоны, как средство не только коммуникации, но и получения дополнительных функций для удобства жизни",
-        [first_product, second_product])
+        [first_product, second_product],
+    )

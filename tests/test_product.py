@@ -12,10 +12,10 @@ def test_product_init(first_product):
 
 
 def test_price_setter(capsys):
-    product = Product('Nokia 3300', 'Cool telephone', 0, 1)
+    product = Product("Nokia 3300", "Cool telephone", 0, 1)
     product.price = 0
     message = capsys.readouterr()
-    assert message.out.strip() == 'Цена не должна быть нулевая или отрицательная'
+    assert message.out.strip() == "Цена не должна быть нулевая или отрицательная"
     product.price = 2388.0
     assert product.price == 2388.0
 
