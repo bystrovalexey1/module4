@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2917e5-fac1-4391-a357-219538b4f05a" name="Changes" comment="исправил ошибки">
-      <change afterPath="$PROJECT_DIR$/tests/test_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
+    <list default="true" id="1a2917e5-fac1-4391-a357-219538b4f05a" name="Changes" comment="tessts">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +23,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="feauture-homework-14.2" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -55,14 +61,45 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python tests.Python tests for test_category.test_add_product.executor": "Run",
+    "Python tests.Python tests for test_category.test_product_list_property.executor": "Run",
+    "Python tests.Python tests for test_category.test_products.executor": "Run",
+    "Python tests.Python tests for test_product.test_price_setter.executor": "Run",
+    "Python tests.Python tests in test_category.py.executor": "Run",
+    "Python.14.2_main.executor": "Run",
+    "Python.15.1_main.executor": "Run",
+    "Python.category.executor": "Run",
     "Python.main.executor": "Run",
+    "Python.product.executor": "Run",
     "Python.utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "#1 on feauture-himework-14.1",
-    "last_opened_file_path": "C:/Users/Alexey/PycharmProjects/pythonProject2"
+    "git-widget-placeholder": "feature-homework-15.1",
+    "last_opened_file_path": "C:/Users/Alexey/PycharmProjects/module4"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.utils">
+  <component name="RunManager" selected="Python.15.1_main">
+    <configuration name="15.1_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="module4" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/15.1_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="module4" />
       <option name="ENV_FILES" value="" />
@@ -107,10 +144,43 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for test_category.test_product_list_property" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="module4" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_category.test_product_list_property&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_product.test_price_setter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="module4" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_product.test_price_setter&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.15.1_main" />
         <item itemvalue="Python.utils" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.Python tests for test_product.test_price_setter" />
+        <item itemvalue="Python tests.Python tests for test_category.test_product_list_property" />
       </list>
     </recent_temporary>
   </component>
@@ -154,7 +224,47 @@
       <option name="project" value="LOCAL" />
       <updated>1731948137455</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="HW 14.2 add new method">
+      <option name="closed" value="true" />
+      <created>1732090973141</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732090973141</updated>
+    </task>
+    <task id="LOCAL-00005" summary="HW 14.2 add new method">
+      <option name="closed" value="true" />
+      <created>1732090981022</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732090981022</updated>
+    </task>
+    <task id="LOCAL-00006" summary="HW 14.2 add new method">
+      <option name="closed" value="true" />
+      <created>1732207195273</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732207195273</updated>
+    </task>
+    <task id="LOCAL-00007" summary="tessts">
+      <option name="closed" value="true" />
+      <created>1732379570155</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732379570155</updated>
+    </task>
+    <task id="LOCAL-00008" summary="tessts">
+      <option name="closed" value="true" />
+      <created>1732379733579</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732379733579</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -162,6 +272,8 @@
     <MESSAGE value="homework 14.1" />
     <MESSAGE value="homework 14.1&#10;read from json" />
     <MESSAGE value="исправил ошибки" />
-    <option name="LAST_COMMIT_MESSAGE" value="исправил ошибки" />
+    <MESSAGE value="HW 14.2 add new method" />
+    <MESSAGE value="tessts" />
+    <option name="LAST_COMMIT_MESSAGE" value="tessts" />
   </component>
 </project>
