@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a2917e5-fac1-4391-a357-219538b4f05a" name="Changes" comment="tessts">
+    <list default="true" id="1a2917e5-fac1-4391-a357-219538b4f05a" name="Changes" comment="15.1 hw and tests">
+      <change afterPath="$PROJECT_DIR$/src/product_iterator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_category.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +67,14 @@
     "Python.category.executor": "Run",
     "Python.main.executor": "Run",
     "Python.product.executor": "Run",
+    "Python.product_iterator.executor": "Run",
     "Python.utils.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "feature-homework-15.1",
     "last_opened_file_path": "C:/Users/Alexey/PycharmProjects/module4"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.15.1_main">
+  <component name="RunManager" selected="Python.product_iterator">
     <configuration name="15.1_main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="module4" />
       <option name="ENV_FILES" value="" />
@@ -122,6 +119,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="product_iterator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="module4" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/product_iterator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="module4" />
       <option name="ENV_FILES" value="" />
@@ -144,21 +163,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_category.test_product_list_property" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="module4" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_category.test_product_list_property&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_product.test_price_setter" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="module4" />
       <option name="ENV_FILES" value="" />
@@ -176,11 +180,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.product_iterator" />
         <item itemvalue="Python.15.1_main" />
         <item itemvalue="Python.utils" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python tests.Python tests for test_product.test_price_setter" />
-        <item itemvalue="Python tests.Python tests for test_category.test_product_list_property" />
       </list>
     </recent_temporary>
   </component>
@@ -264,7 +268,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732379733579</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="15.1 hw and tests">
+      <option name="closed" value="true" />
+      <created>1732731028786</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732731028786</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -274,6 +286,7 @@
     <MESSAGE value="исправил ошибки" />
     <MESSAGE value="HW 14.2 add new method" />
     <MESSAGE value="tessts" />
-    <option name="LAST_COMMIT_MESSAGE" value="tessts" />
+    <MESSAGE value="15.1 hw and tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="15.1 hw and tests" />
   </component>
 </project>
