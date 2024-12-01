@@ -1,4 +1,6 @@
-from src.product import Product
+import pytest
+
+from src.product import Product, Smartphone, LawnGrass
 
 
 def test_product_init(first_product):
@@ -44,3 +46,29 @@ def test_new_str(product_1_str, product_2_str):
 
 def test_counter(counter, first_product, second_product):
     assert first_product + second_product == counter
+
+
+def test_subclass_product():
+    assert issubclass(Smartphone, Product) == True
+    assert issubclass(LawnGrass, Product) == True
+
+
+def test_isinstance_product(smartphone_1, smartphone_2, smartphone_3, lawn_grass_1, lawn_grass_2):
+    assert isinstance(smartphone_1, Smartphone) == True
+    assert isinstance(smartphone_2, Smartphone) == True
+    assert isinstance(smartphone_3, Smartphone) == True
+    assert isinstance(lawn_grass_1, LawnGrass) == True
+    assert isinstance(lawn_grass_2, LawnGrass) == True
+
+
+def test_error_type(category_smartphones, smartphone_3, lawn_grass_1):
+    with pytest.raises(TypeError):
+        assert category_smartphones.add_product("Not a product") == TypeError
+    assert category_smartphones.add_product(smartphone_3) is None
+    assert category_smartphones.add_product(lawn_grass_1) is None
+
+
+def test_sum(smartphone_3, smartphone_2, lawn_grass_2):
+    assert smartphone_3 + smartphone_2 == 278000
+    with pytest.raises(TypeError):
+        assert smartphone_3 + lawn_grass_2 == TypeError
