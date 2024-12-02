@@ -1,4 +1,19 @@
-class Product:
+from abc import ABC, abstractmethod
+
+
+class BaseProduct(ABC):
+    @abstractmethod
+    def __init__(self):
+        pass
+
+
+class MixinLog:
+    def __init__(self):
+        print(f"Product('{self.name}', '{self.description}', {self.price}, {self.quantity})")
+        super().__init__()
+
+
+class Product(MixinLog, BaseProduct):
     name: str
     description: str
     price: float
@@ -9,6 +24,7 @@ class Product:
         self.description = description
         self.__price = price
         self.quantity = quantity
+        super().__init__()
 
     @property
     def price(self):
@@ -44,7 +60,7 @@ class Product:
         raise TypeError
 
 
-class Smartphone(Product):
+class Smartphone(Product, MixinLog):
     efficiency: float
     model: str
     memory: str
@@ -58,7 +74,7 @@ class Smartphone(Product):
         self.color = color
 
 
-class LawnGrass(Product):
+class LawnGrass(Product, MixinLog):
     country: str
     germination_period: str
     color: str
