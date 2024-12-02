@@ -1,7 +1,7 @@
 import pytest
 
 from src.category import Category
-from src.product import Product
+from src.product import Product, Smartphone, LawnGrass
 
 
 @pytest.fixture
@@ -65,3 +65,36 @@ def product_2_str(second_product):
 @pytest.fixture
 def counter(first_product, second_product):
     return first_product.price * first_product.quantity + second_product.price * second_product.quantity
+
+
+@pytest.fixture
+def smartphone_1():
+    return Smartphone(
+        "Iphone 13 Pro", "128Gb, 2Gb OZU, 13Mp Camera", 39500, 13, 99.1, "13 Pro", "128 Gb", "Space Gray"
+    )
+
+
+@pytest.fixture
+def smartphone_2():
+    return Smartphone("Samsung Galaxy S3", "1TB, 8Gb OZU, 20Mp Camera", 55000, 5, 105.1, "S3", "1 Tb", "black")
+
+
+@pytest.fixture
+def smartphone_3():
+    return Smartphone("Nokia 3900", "128Mb, 256Mb OZU, 0.5Mp Camera", 1000, 3, 35.0, "3900", "128 Mb", "Blue")
+
+
+@pytest.fixture
+def lawn_grass_1():
+    return LawnGrass("Газон", "Трава для посадки газона", 750, 67, "Russia", "14 дней", "Зеленыый")
+
+
+@pytest.fixture
+def lawn_grass_2():
+    return LawnGrass("Газон синий", "Трава для посадки газона", 1200, 15, "Germany", "8 дней", "Синий")
+
+
+@pytest.fixture
+def category_smartphones():
+    category_smartphones = Category("Смартфоны", "Высокотехнологичные смартфоны", [smartphone_1, smartphone_2])
+    return category_smartphones
