@@ -9,8 +9,9 @@ class BaseProduct(ABC):
 
 class MixinLog:
     def __init__(self):
-        print(f"Product('{self.name}', '{self.description}', {self.price}, {self.quantity})")
-        super().__init__()
+        if self.price > 0:
+            print(f"Product('{self.name}', '{self.description}', {self.price}, {self.quantity})")
+            super().__init__()
 
 
 class Product(MixinLog, BaseProduct):
