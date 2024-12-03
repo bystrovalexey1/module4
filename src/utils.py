@@ -9,7 +9,10 @@ def read_json(path: str) -> list[dict]:
     full_path = os.path.abspath(path)
     with open(full_path, "r", encoding="UTF-8") as file:
         data = json.load(file)
-    return data
+        if len(data) > 0:
+            return data
+        else:
+            return "Нет данных для чтения"
 
 
 def data_from_json(data):
