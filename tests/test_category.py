@@ -12,10 +12,10 @@ def test_category_init(first_category, second_category):
     assert second_category.products == ["Куртка", "Шапка", "Кроссовки"]
     assert len(second_category.products) == 3
 
-    assert first_category.category_count == 2
-    assert second_category.category_count == 2
-    assert first_category.product_count == 5
-    assert second_category.product_count == 5
+    assert first_category.category_count == 3
+    assert second_category.category_count == 3
+    assert first_category.product_count == 7
+    assert second_category.product_count == 7
 
 
 def test_products(first_category):
@@ -23,9 +23,9 @@ def test_products(first_category):
 
 
 def test_add_product(first_category, second_product):
-    assert first_category.product_count == 9
+    assert first_category.product_count == 11
     first_category.add_product(second_product)
-    assert first_category.product_count == 10
+    assert first_category.product_count == 12
 
 
 def test_product_list_property(third_category):

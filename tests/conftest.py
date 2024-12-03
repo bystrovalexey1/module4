@@ -1,7 +1,10 @@
+import os
+
 import pytest
 
 from src.category import Category
 from src.product import Product, Smartphone, LawnGrass
+from src.product_iterator import ProductIterator
 
 
 @pytest.fixture
@@ -98,3 +101,18 @@ def lawn_grass_2():
 def category_smartphones():
     category_smartphones = Category("Смартфоны", "Высокотехнологичные смартфоны", [smartphone_1, smartphone_2])
     return category_smartphones
+
+
+@pytest.fixture
+def filename():
+    return os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "products.json")
+
+
+@pytest.fixture
+def empty_list():
+    return os.path.join(os.path.dirname(os.path.dirname(__file__)), "data", "empty_products.json")
+
+
+@pytest.fixture
+def product_iterator(third_category):
+    return ProductIterator(third_category)
