@@ -116,3 +116,8 @@ def empty_list():
 @pytest.fixture
 def product_iterator(third_category):
     return ProductIterator(third_category)
+
+
+@pytest.fixture
+def empty_category():
+    return Category("Пустая категория", "Категория без продуктов", [])

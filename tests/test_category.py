@@ -38,3 +38,9 @@ def test_product_list_property(third_category):
 
 def test_add_counter(sum_counter):
     assert sum_counter == "Смартфоны, 74 шт."
+
+
+def test_middle_price(category_smartphones, third_category, empty_category):
+    # assert category_smartphones.middle_price() == 43805.56
+    assert third_category.middle_price() == 24000.0
+    assert empty_category.middle_price() == 0

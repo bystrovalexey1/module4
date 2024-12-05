@@ -86,3 +86,7 @@ def test_product_iterator(product_iterator):
     assert next(product_iterator).name == 'Iphone 11 Pro'
     assert next(product_iterator).name == 'XIAOMI Ultra Pro'
 
+
+def test_invalid_product():
+    with pytest.raises(ValueError, match='Товар с нулевым количеством не может быть добавлен'):
+        Product("Бракованный товар", "Неверное количество", 1000.0, 0)
