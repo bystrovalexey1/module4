@@ -1,4 +1,4 @@
-from src.product import Product
+from src.product import Product, Smartphone
 
 
 class Category:
@@ -41,3 +41,17 @@ class Category:
         for product in self.__products:
             counter += product.quantity
         return f"{self.name}, количество продуктов {counter} шт.\n"
+
+    def middle_price(self):
+        """Функция, которая подсчитывает среднюю цену всех товаров"""
+        try:
+            sum = 0
+            quan = 0
+            for product in self.__products:
+                sum += product.price * product.quantity
+                quan += product.quantity
+            mid_price = sum / quan
+        except ZeroDivisionError:
+            return 0
+        else:
+            return round(mid_price, 2)
